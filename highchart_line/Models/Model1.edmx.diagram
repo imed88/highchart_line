@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="efcd48f7398d4de987ceb0f2fa9d0f2f" Name="Diagram1">
+        <EntityTypeShape EntityType="AppsDBModel.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppsDBModel.AppointementModels" Width="1.5" PointX="8.25" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppsDBModel.AspNetRoles" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppsDBModel.AspNetUserClaims" Width="1.5" PointX="5.25" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppsDBModel.AspNetUserLogins" Width="1.5" PointX="5.25" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppsDBModel.AspNetUsers" Width="1.5" PointX="3" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppsDBModel.ConsultationDetails" Width="1.5" PointX="10.5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppsDBModel.Consultations" Width="1.5" PointX="8.25" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppsDBModel.Events" Width="1.5" PointX="5.25" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppsDBModel.FileDetails" Width="1.5" PointX="8.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppsDBModel.MedecinConventionnes" Width="1.5" PointX="3" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppsDBModel.OrderDetails" Width="1.5" PointX="12.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppsDBModel.Orders" Width="1.5" PointX="10.5" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppsDBModel.Patients" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppsDBModel.Products" Width="1.5" PointX="10.5" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppsDBModel.RDVs" Width="1.5" PointX="10.5" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppsDBModel.Specialites" Width="1.5" PointX="0.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppsDBModel.Usines" Width="1.5" PointX="3.75" PointY="2" IsExpanded="true" />
+        <AssociationConnector Association="AppsDBModel.FK_dbo_AppointementModels_dbo_MedecinConventionnes_idDoctors" ManuallyRouted="false" />
+        <AssociationConnector Association="AppsDBModel.FK_dbo_AppointementModels_dbo_Patients_idPatients" ManuallyRouted="false" />
+        <AssociationConnector Association="AppsDBModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="AppsDBModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="AppsDBModel.FK_dbo_Consultations_dbo_AspNetUsers_UserID" ManuallyRouted="false" />
+        <AssociationConnector Association="AppsDBModel.FK_dbo_ConsultationDetails_dbo_Consultations_ConsultationID" ManuallyRouted="false" />
+        <AssociationConnector Association="AppsDBModel.FK_dbo_Consultations_dbo_Patients_idPatients" ManuallyRouted="false" />
+        <AssociationConnector Association="AppsDBModel.FK_dbo_Orders_dbo_Consultations_ConsultationID" ManuallyRouted="false" />
+        <AssociationConnector Association="AppsDBModel.FK_dbo_RDVs_dbo_Consultations_ConsultationID" ManuallyRouted="false" />
+        <AssociationConnector Association="AppsDBModel.FK_dbo_Events_dbo_MedecinConventionnes_idDoctors" ManuallyRouted="false" />
+        <AssociationConnector Association="AppsDBModel.FK_dbo_FileDetails_dbo_Patients_IdPatients" ManuallyRouted="false" />
+        <AssociationConnector Association="AppsDBModel.FK_dbo_MedecinConventionnes_dbo_Specialites_idSpecialite" ManuallyRouted="false" />
+        <AssociationConnector Association="AppsDBModel.FK_dbo_OrderDetails_dbo_Orders_OrderID" ManuallyRouted="false" />
+        <AssociationConnector Association="AppsDBModel.FK_dbo_OrderDetails_dbo_Products_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="AppsDBModel.FK_dbo_Patients_dbo_Usines_IdUsine" ManuallyRouted="false" />
+        <AssociationConnector Association="AppsDBModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
